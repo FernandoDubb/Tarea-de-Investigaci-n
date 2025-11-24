@@ -42,15 +42,15 @@ Este modelo es el que se usa para poder hacer findAll, create, update y destroy
 
 Aquí está Express configurado y todas las rutas del CRUD:
 
-✔️ GET /estudiante
+ GET /estudiante
 
 Obtiene la lista de todos los estudiantes.
 
-✔️ POST /estudiante
+ POST /estudiante
 
 Crea un nuevo estudiante con los datos enviados en el cuerpo.
 
-✔️ PUT /estudiante/:IdEstudiante
+ PUT /estudiante/:IdEstudiante
 
 Actualiza un estudiante según su ID.
 
@@ -60,7 +60,7 @@ Código principal: const [updated] = await Estudiante.update(req.body, {
 Si se actualiza, responde “registro actualizado”.
 Si no existe, devuelve error.
 
-✔️ DELETE /estudiante/:idEstudiante
+DELETE /estudiante/:idEstudiante
 
 Elimina un estudiante por ID.
 
@@ -69,7 +69,7 @@ Código principal:const deleted = await Estudiante.destroy({
 });
 Si elimina correctamente, responde “Eliminado correctamente”.
 4. Cómo funcionan PUT y DELETE
-🟩 PUT (Actualizar)
+PUT (Actualizar)
 
 Este método se usa para modificar un registro ya existente.
 
